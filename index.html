@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title></title>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col py-3 bg-dark scrolling-column">
+      <!-- <a href="#" class="bubble">1</a> -->
+      <!-- Add more bubbles as needed -->
+    </div>
+    <div class="col py-3 bg-light-subtle">
+      <p> On the left here is my recreation of the sidebar seen in the popular messaging app, <a href="https://www.discord.com">Discord.</a>
+      Each bubble is its own community, and you can be a part of up to 100. As you can see by interacting 
+      with the slider below, it can become difficult to navigate using this sidebar if you're a part of 
+      lots of communities.
+      </p>
+      <label for="numChannels">Number of community icons:</label>
+      <input type=range value="24" min="12" max="120" step="12" id="numChannels">
+        <span id="numChannelsVal"></span>
+      <br><br>
+      <p id="textAboveSwitch">Flip the switch below to see my idea for an alternative.</p>
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider round"></span>
+      </label>
+      <br><br>
+      <div id="textBelowSwitch" style="display: none;">
+        <p>
+          Not very impressive, I know. <br>
+          The sidebar can now be resized by the user. This allows them to adjust
+          the amount of screen space taken up by the sidebar at any time, and find what works for them.
+          this doesn't reduce <em>clicks</em>, but it reduces scrolling and also allows users to see when
+          communities have new activity in them (I haven't implemented the "new message dot" on this page).
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js'></script>
+<script src='./scripts/script.js'></script>
+</body>
+</html>
